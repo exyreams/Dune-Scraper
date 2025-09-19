@@ -1,12 +1,14 @@
-# 🦅 Dune Scraper - Advanced Data Extraction Tool
-
-**Professional Chrome Extension for Dune Analytics Data Scraping**
+# Dune Scraper - Advanced Data Extraction Tool
 
 <div align="center">
+
+<img src="https://raw.githubusercontent.com/exyreams/Dune-Scraper/17c9c8efcbe45eb0a36bfdbdf87c1c0b9c0543cd/assets/icon.svg" alt="Dune Scraper Logo" width="120" height="120">
 
 [![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)]()
 [![License](https://img.shields.io/badge/license-MIT-green.svg)]()
 [![Chrome Extension](https://img.shields.io/badge/platform-Chrome%20Extension-yellow.svg)]()
+
+**Professional Chrome Extension for Dune Analytics Data Scraping**
 
 </div>
 
