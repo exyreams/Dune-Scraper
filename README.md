@@ -1,4 +1,4 @@
-# Dune Scraper - Advanced Data Extraction Tool
+# Dune Scraper
 
 <div align="center">
 
