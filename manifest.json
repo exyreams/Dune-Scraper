@@ -1,0 +1,67 @@
+{
+  "manifest_version": 3,
+  "name": "Dune Scraper",
+  "version": "2.0.0",
+  "description": "Advanced data scraper for Dune Analytics with pagination support",
+  "author": "Arguschain",
+  
+  "permissions": [
+    "activeTab",
+    "storage",
+    "downloads",
+    "scripting",
+    "webRequest",
+    "contextMenus"
+  ],
+  
+  "host_permissions": [
+    "*://dune.com/*",
+    "*://dune.xyz/*",
+    "*://*.dune.com/*",
+    "*://*.dune.xyz/*"
+  ],
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": [
+        "*://dune.com/*",
+        "*://dune.xyz/*",
+        "*://*.dune.com/*",
+        "*://*.dune.xyz/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icon16.png",
+      "32": "assets/icon32.png",
+      "48": "assets/icon48.png",
+      "128": "assets/icon128.png"
+    }
+  },
+  
+
+  
+  "icons": {
+    "16": "assets/icon16.png",
+    "32": "assets/icon32.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+  
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
